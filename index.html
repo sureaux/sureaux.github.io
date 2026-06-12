@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal research website for Samuel Sureaux, an independent researcher in mathematics.">
+  <meta name="author" content="Samuel Sureaux">
+  <title>Samuel Sureaux</title>
+  <script>
+    try{var preferences={};try{preferences=JSON.parse(window.name||"{}")||{}}catch(e){}function readPreference(key,fallback){try{var query=new URLSearchParams(window.location.search).get(key);if(query)return query}catch(e){}try{var stored=localStorage.getItem(key);if(stored)return stored}catch(e){}try{var session=sessionStorage.getItem(key);if(session)return session}catch(e){}return preferences[key]||fallback}document.documentElement.dataset.theme=readPreference("theme",(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}
+    window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]],processEscapes:true,macros:{Aut:"\\operatorname{Aut}",N:"\\mathbb{N}"}},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};
+  </script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="index.html">Samuel Sureaux</a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </header>
+  <main class="container layout">
+    <aside class="profile" aria-label="Profile">
+      <h1>Samuel Sureaux</h1>
+      <p>Mathematics enthusiast and hobbyist, broadly interested in various aspects of analysis and algebra, and their respective applications.</p>
+    </aside>
+    <section class="content">
+      <h2>Information</h2>
+      <p>This site is, tentatively, a minimalist site where I plan to index my projects, research preprints, and other shareables. My recent and current work are, and to be, listed on the <a href="projects.html">Projects</a> page. It should also be noted that this site is very much under development, and that I am still revising and migrating my previous projects and work. Please be kind!</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>2026 Samuel Sureaux</p>
+    </div>
+  </footer>
+</body>
+</html>

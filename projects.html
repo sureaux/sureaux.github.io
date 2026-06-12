@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projects by Samuel Sureaux.">
+  <meta name="author" content="Samuel Sureaux">
+  <title>Projects | Samuel Sureaux</title>
+  <script>
+    try{var preferences={};try{preferences=JSON.parse(window.name||"{}")||{}}catch(e){}function readPreference(key,fallback){try{var query=new URLSearchParams(window.location.search).get(key);if(query)return query}catch(e){}try{var stored=localStorage.getItem(key);if(stored)return stored}catch(e){}try{var session=sessionStorage.getItem(key);if(session)return session}catch(e){}return preferences[key]||fallback}document.documentElement.dataset.theme=readPreference("theme",(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light")}catch(e){document.documentElement.dataset.theme="light"}
+    window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]],processEscapes:true,macros:{Aut:"\\operatorname{Aut}",N:"\\mathbb{N}"}},options:{skipHtmlTags:["script","noscript","style","textarea","pre","code"]}};
+  </script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
+</head>
+<body data-page="projects">
+  <header class="site-header">
+    <div class="container">
+      <a class="site-title" href="index.html">Samuel Sureaux</a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Dark</button>
+      </div>
+    </div>
+  </header>
+  <main class="container layout">
+    <aside class="page-menu" aria-label="Manuscript sections">
+      <p class="menu-heading">Contents</p>
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#research-preprints">Research Preprints</a>
+        <a href="#publications">Publications</a>
+      </nav>
+    </aside>
+    <section class="content">
+      <form class="project-search" role="search" data-project-search>
+        <label for="project-search">Search projects</label>
+        <input id="project-search" type="search" name="q" placeholder="Search by title, abstract, or status" autocomplete="off" data-project-search-input>
+      </form>
+      <h2 id="research-preprints">Research Preprints</h2>
+      <ol class="publication-list">
+        <li data-project-item>
+          <p class="publication-title">
+            <a href="papers/automorphism-ratios/automorphism-ratios.pdf">Automorphism Ratios of Finite Groups</a>
+          </p>
+          <p class="publication-meta"><a class="archive-link" href="papers/automorphism-ratios/archival.html">Archival</a>: v1 (current), 2026.</p>
+          <div class="abstract">
+            <p><span class="label">Abstract.</span> We prove that for all \(r \in \mathbb{Q}^{+}\), there exists a finite group \(G\) such that \(\frac{|\text{Aut}(G)|}{|G|}=r,\) thereby answering Problem 21.97 of the Kourovka Notebook in the affirmative. The proof is constructive, using prime-avoiding metacyclic numerator blocks with perfect denominator blocks built from universal central extensions and Heisenberg-symplectic semidirect products.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="search-empty" hidden data-project-search-empty>No matching projects found.</p>
+      <h2 id="publications">Publications</h2>
+      <p>No journal publications are listed yet.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>2026 Samuel Sureaux</p>
+    </div>
+  </footer>
+</body>
+</html>
